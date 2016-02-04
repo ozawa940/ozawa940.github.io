@@ -1,0 +1,31 @@
+/*  Header  */
+#heading {
+
+    text-align: center;
+    height: 200px;
+    color: #FFFFFF;
+    font-size: 44px;
+    background-color: #56564F;
+
+}
+
+
+
+/*  Contents  */
+
+section {
+
+    opacity: 0;
+
+}
+
+.fadein {
+
+    transition: opacity 2s ease-in ;
+    opacity: 1;
+
+}
+
+
+
+
