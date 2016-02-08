@@ -3,7 +3,7 @@ function  init() {
 
     document.getElementsByTagName("section")[0].className = "fadein";
 
-    preview_contents("../md/profile/my_profile.md");
+    preview_contents_ajax("../md/profile/my_profile.md");
 
 
 }
@@ -27,24 +27,18 @@ function init_view_click(){
 }
 
 
-function preview_contents (url_) {
-
-    var md_ = marked(ajax(url_));
-    var menu_ = document.getElementById("contents").appendChild(md_);
-
-
-}
-
-
 // return markdown
-function ajax(url_){
+function preview_contents_ajax(url_){
 
     var r_ = new XMLHttpRequest();
 
     r_.onreadystatechange = function(){
         if(r_.readyState != 4 || r_.status != 200){ return; }
+        //success 
+        var md_ = marked(r_.responseText;);
+        var menu_ = document.getElementById("contents").appendChild(md_);
         
-        return r_.responseText;
+        
     }
 
     r_.open("GET", url_, true);
