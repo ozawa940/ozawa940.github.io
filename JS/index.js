@@ -6,7 +6,7 @@ function  init() {
 
     setTimeout(function(){
         document.getElementsByTagName("section")[0].className = "fadein";
-    }, 2000);
+    }, 1000);
 }
 
 
