@@ -36,7 +36,7 @@ function preview_contents_ajax(url_){
         if(r_.readyState != 4 || r_.status != 200){ return; }
         //success 
         var md_ = marked(r_.responseText);
-        var menu_ = document.getElementById("contents").appendChild(md_);
+        document.getElementById("contents").innerHTML(md_);
         
         
     }
