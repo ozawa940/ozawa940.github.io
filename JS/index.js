@@ -4,8 +4,9 @@ function  init() {
 
     preview_contents_ajax("../md/profile/my_profile.md");
 
-    document.getElementsByTagName("section")[0].className = "fadein";
-
+    setTimeout(function(){
+        document.getElementsByTagName("section")[0].className = "fadein";
+    }, 2000);
 }
 
 
@@ -37,8 +38,8 @@ function preview_contents_ajax(url_){
         //success 
         var md_ = marked(r_.responseText);
         document.getElementById("contents").innerHTML = md_;
-        
-        
+
+
     }
 
     r_.open("GET", url_, true);
