@@ -3,7 +3,7 @@ function  init() {
 
     document.getElementsByTagName("section")[0].className = "fadein";
 
-    preview_contents_ajax("../md/profile/my_profile.md");
+    preview_contents_ajax("https://github.com/ozawa940/ozawa940.github.io/tree/master/md/profile");
 
 
 }
