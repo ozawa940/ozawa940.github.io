@@ -1,10 +1,10 @@
 // initialization
 function  init() {
 
-    document.getElementsByTagName("section")[0].className = "fadein";
 
     preview_contents_ajax("../md/profile/my_profile.md");
 
+    document.getElementsByTagName("section")[0].className = "fadein";
 
 }
 
