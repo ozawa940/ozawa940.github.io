@@ -35,7 +35,7 @@ function preview_contents_ajax(url_){
     r_.onreadystatechange = function(){
         if(r_.readyState != 4 || r_.status != 200){ return; }
         //success 
-        var md_ = marked(r_.responseText;);
+        var md_ = marked(r_.responseText);
         var menu_ = document.getElementById("contents").appendChild(md_);
         
         
