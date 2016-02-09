@@ -11,6 +11,6 @@
         <li>ツイートを収集</li>
   </ul>
 
-  <p><a class="btn btn-primary btn-lg" href="https://github.com/ozawa940/lib" role="button">click</a></p>
+  <p><a class="btn btn-primary btn-lg" href="https://github.com/ozawa940/lib/tree/master/python/twitter" role="button">click</a></p>
 </div>
 
