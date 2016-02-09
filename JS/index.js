@@ -21,7 +21,7 @@ function init_view_click(){
         if(menu_[0].className == "preview"){        
 
             active_class(menu_[0], menu_[1]);
-            contents_child_node_.keys(contents_child_node_).forEach(function(key){
+            Object.keys(contents_child_node_).forEach(function(key){
                 comtents_elm_.removeChild(contents_child_node_[key]);
             })
                 preview_contents_ajax("../md/profile/my_profile.md");
@@ -34,7 +34,7 @@ function init_view_click(){
         if(menu_[1].className == "preview"){        
 
             active_class(menu_[1], menu_[0]);
-            contents_child_node_.keys(contents_child_node_).forEach(function(key){
+            Object.keys(contents_child_node_).forEach(function(key){
                 comtents_elm_.removeChild(contents_child_node_[key]);
             })
             preview_contents_ajax("../md/repo/head.md");
