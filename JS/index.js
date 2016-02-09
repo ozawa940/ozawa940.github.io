@@ -3,7 +3,7 @@ function  init() {
 
 
     preview_contents_ajax("../md/profile/my_profile.md");
-
+    init_view_click();
     setTimeout(function(){
         document.getElementsByTagName("section")[0].className = "fadein";
     }, 500);
@@ -13,20 +13,35 @@ function  init() {
 function init_view_click(){
 
     var menu_ = document.getElementsByClassName("preview");
+    // contact
+    menu_[0].addEventListener("click", function(){
+        if(menu_[0].className == "preview"){        
 
+            active_class(menu_[0], menu_[1]);
+            document.getElementById("contents").removeChild();
+            preview_contents_ajax("../md/profile/my_profile.md");
 
+        }
 
+    })
+    // repository
+    menu_[1].addEventListener("click", function(){
+        if(menu_[1].className == "preview"){        
 
-    // Object.keys(menu_).forEach(function(key_){
-    //     menu_[key_].addEventListener("click", function(){
-    //         preview_contents(menu_[key_].value)
-    //     }, false);
+            active_class(menu_[1], menu_[0]);
+            document.getElementById("contents").removeChild();
+            preview_contents_ajax("../md/repo/head.md");
 
-    // })
-
+        }
+    })
 
 }
 
+// TODO: 拡張時作りなおす 
+function active_class(act_elm_, pas_elm_){
+    act_elm_.className = "preview active";
+    pas_elm_.className = "preview";
+}
 
 // return markdown
 function preview_contents_ajax(url_){
