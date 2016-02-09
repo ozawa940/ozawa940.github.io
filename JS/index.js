@@ -14,17 +14,15 @@ function init_view_click(){
 
     var menu_ = document.getElementsByClassName("preview");
     var comtents_elm_ = document.getElementById("contents");
-    var contents_child_node_ = comtents_elm_.childNodes;
 
     // contact
     menu_[0].addEventListener("click", function(){
         if(menu_[0].className == "preview"){        
 
             active_class(menu_[0], menu_[1]);
-            Object.keys(contents_child_node_).forEach(function(key){
-                comtents_elm_.removeChild(contents_child_node_[key]);
-            })
-                preview_contents_ajax("../md/profile/my_profile.md");
+            comtents_elm_.removeChild(comtents_elm_.firstChild);
+            preview_contents_ajax("../md/profile/my_profile.md");
+
 
         }
 
@@ -34,9 +32,7 @@ function init_view_click(){
         if(menu_[1].className == "preview"){        
 
             active_class(menu_[1], menu_[0]);
-            Object.keys(contents_child_node_).forEach(function(key){
-                comtents_elm_.removeChild(contents_child_node_[key]);
-            })
+            comtents_elm_.removeChild(comtents_elm_.firstChild);
             preview_contents_ajax("../md/repo/head.md");
 
         }
