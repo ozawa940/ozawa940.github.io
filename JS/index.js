@@ -40,7 +40,7 @@ function init_view_click(){
 
 }
 
-// TODO: 拡張時作りなおす 
+// TODO: 拡張時、作りなおす 
 function active_class(act_elm_, pas_elm_){
     act_elm_.className = "preview active";
     pas_elm_.className = "preview";

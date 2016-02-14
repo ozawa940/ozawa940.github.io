@@ -1,6 +1,6 @@
 ### Repository  
 
-
+<!-- TODO: そのうち改良します -->
 
 <div class="jumbotron">
   <h1>lib</h1>
