@@ -8,7 +8,9 @@
   <h4>twitter_collection.py</h4>
   <p>内容</p>
   <ul>
-        <li>ツイートを収集</li>
+        <li>検索したツイートを指定数収集</li>
+        <li>指定したスクリーンネームのツイートを最大3200件まで取得</li>
+        <li>TwitterSteamを使ってツイートを取得(日本全国)</li>
   </ul>
 
   <p><a class="btn btn-primary btn-lg" href="https://github.com/ozawa940/lib/tree/master/python/twitter" role="button">click</a></p>

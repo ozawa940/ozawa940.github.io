@@ -16,4 +16,5 @@
 
 
 更新履歴：
+2016/2/25 lib twitter_collection.py の修正
 2016/2/15 更新履歴の追加
